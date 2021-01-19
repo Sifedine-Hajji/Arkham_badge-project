@@ -12,7 +12,7 @@
 
   function isAuthenticated(){
     session_start_once();
-    return !empty($_SESSION['id']);
+    return !empty($_SESSION['user_id']);
   }
 
   function isAdmin(){
@@ -22,8 +22,8 @@
 
   function login($email, $password){
     session_start_once();
-
     $cursor = createCursor();
+
     $query = $cursor->prepare('SELECT id, password from users WHERE email=?');
     $query->execute([$email]);
     $results = $query->fetch();
@@ -35,9 +35,9 @@
       $_SESSION['account_type'] = $results['account_type'];
       $_SESSION['email'] = $email;
 
-      return true
+      return true;
     }
-    return false
+    return false;
   }
 
   function logout(){
@@ -46,11 +46,14 @@
   }
 
   function getBadges(){
+    $bdd = createCursor();
+    $badges = $bdd->query('SELECT id_badges FROM badges');
 
   }
 
   function getUsers(){
-
+    $bdd = createCursor();
+    $users = $bdd->query('SELECT id FROM users');
   }
 
   function createBadge(){
