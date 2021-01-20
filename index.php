@@ -18,8 +18,8 @@
   <title>Breaking Badge</title>
 </head>
 
-<body>
-  
+<body class="welcomeBody">
+
   <?php
     include('./pages/welcome.php');
   ?>
