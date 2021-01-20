@@ -75,6 +75,44 @@
    
     <li class="list-group-item"> <img src="../assets/images/gamerphoto.png" id=gamerprofilepic> 
      Betty
+
+
+     <div class="container-modal">
+  <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#Modal">Add gamer</button>
+</div>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">add a new gamer</h4>
+      </div>
+      <div class="modal-body">
+      <form>
+    <div class="col">
+    <label>Email address</label>
+    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    
+    <div class="col">
+    <label> First Name</label>
+    <input type="text" class="form-control" placeholder="First name">
+   </div>
+   <div class="col">
+   <label> Last Name</label>
+    <input type="text" class="form-control" placeholder="Last name">
+  </div>
+  <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal">Add gamer</button>
+
+</form>     
+
+ </div>
+    </div>
+  </div>
+</div>
     </li>
    
     <li class="list-group-item"> <img src="../assets/images/gamerphoto.png" id=gamerprofilepic> 

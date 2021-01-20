@@ -1,9 +1,9 @@
 <?php
-include_once('components/functions.php');
-if(!empty($_POST["logout"])){
-logout();
-header("location:index.php");
-}
+// include_once('components/functions.php');
+// if(!empty($_POST["logout"])){
+// logout();
+// header("location:index.php");
+// }
 
 
 ?>
@@ -18,9 +18,9 @@ header("location:index.php");
 </head>
 <body>
     <h1>connecté dashboard</h1>
-<form method="POST">
+<!-- <form method="POST">
     <input type = "submit" value="log out" name="logout">
-    </form>
+    </form> -->
     
 </body>
 </html>

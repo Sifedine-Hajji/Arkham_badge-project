@@ -25,7 +25,7 @@
   <?php
   
   if(isAuthenticated()){
-    include('pages/dashboard.php');
+    header('location:./pages/dashboardadmin.php');
     // logout();
     
   }else {
