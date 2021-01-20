@@ -20,7 +20,8 @@
   <title>Breaking Badge</title>
 </head>
 
-<body>
+<body class="welcomeBody">
+
   <?php
   
   if(isAuthenticated()){
