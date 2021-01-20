@@ -49,7 +49,7 @@
 
   function getBadges(){
     $bdd = createCursor();
-    $badges = $bdd->query('SELECT id_badges FROM badges');
+    $badges = $bdd->query('SELECT id_badges, nom_badges, desc_badges FROM badges');
 
   }
 
