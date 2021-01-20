@@ -21,8 +21,6 @@
   }
 
 
- 
-
   function login($email, $password){
     session_start_once();
    
@@ -51,18 +49,24 @@
   }
 
   function getBadges(){
+    $bdd = createCursor();
 
+    $getbadge = $bdd->query('SELECT img_badges, nom_badges, desc_badges FROM users_has_badges 
+    INNER JOIN badges ON badges.id_badges = users_has_badges.fk_id_badge');
   }
 
   function getUsers(){
+    $bdd = createCursor();
 
+    $getusers = $bdd->query('SELECT firstname, lastname,  FROM users_has_badges 
+    INNER JOIN users ON users.id = users_has_badges.fk_id_user');
   }
 
   function createBadge(){// il manque des arguments 
 
   }
 
-  function editBadge($badge_id){
+  function editBadge($badge_id){ // requete sql update (nom_badge,desc_badge.......)
 
   }
 
@@ -77,4 +81,16 @@
   function removeBadgeFromUser($badge_id, $user_id){
 
   }
+  function createUser($email, $password, $firstname, $lastname, $account_type){
+    $password = password_hash($password, PASSWORD_DEFAULT);
+    $bdd=createCursor();
+    $req = $bdd->prepare('INSERT INTO users (email, password, firstname, lastname, account_type) VALUES(?, ?, ?, ?, ?)');
+    $req->execute([
+      $firstname,
+      $lastname,
+      $email,
+      $password,
+      $account_type
+      ]);
+    } 
 ?>
