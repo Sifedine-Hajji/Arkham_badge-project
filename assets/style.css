@@ -81,11 +81,15 @@ body {
     font-family: BatmanFont1;
     border: none;
     background: rgba(0, 0, 0, 0.514) ;
+    cursor: pointer;
 }
 .WelcomeButton:hover {
     transform: scale(1.05);
     background: rgba(212, 212, 212, 0.774);
     color: black;
     text-shadow: none;
+}
+.WelcomeButton:focus {
+    outline: none;
 }
  
