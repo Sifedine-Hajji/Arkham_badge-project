@@ -1,5 +1,8 @@
 <?php
-  session_start();
+ 
+  include_once('components/functions.php');
+ 
+
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +16,17 @@
   <title>Breaking Badge</title>
 </head>
 <body>
-  <?php include_once('components/router.php'); ?>
+  <?php
+  
+  if(isAuthenticated()){
+    include('pages/dashboard.php');
+    // logout();
+    
+  }else {
+   
+    include('pages/login.php');
+    
+  }
+  ?>
 </body>
 </html>

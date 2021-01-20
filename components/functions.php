@@ -1,6 +1,6 @@
 <?php
   include_once('db.php');
-
+  
 
   // Similar to "include_once" but for sessions
   // Calls "session_start()" unless it has already been called on the page
@@ -12,7 +12,7 @@
 
   function isAuthenticated(){
     session_start_once();
-    return !empty($_SESSION['id']);
+    return !empty($_SESSION['user_id']);
   }
 
   function isAdmin(){
@@ -20,24 +20,29 @@
     return isAuthenticated && $_SESSION['account_type'] == 'ADMIN';
   }
 
+
+ 
+
   function login($email, $password){
     session_start_once();
-
+   
     $cursor = createCursor();
-    $query = $cursor->prepare('SELECT id, password from users WHERE email=?');
-    $query->execute([$email]);
+    $query = $cursor->prepare('SELECT id, email, password, account_type  FROM users WHERE email=?');
+    $query->execute([$_POST["email"]]);
     $results = $query->fetch();
     
-    $cursor->closeCursor();
-
-    if(password_verify($password, $results['password'])){
+    if(!empty($results) AND password_verify($password, $results['password'])){
       $_SESSION['user_id'] = $results['id'];
       $_SESSION['account_type'] = $results['account_type'];
       $_SESSION['email'] = $email;
+      
 
-      return true
+      return true;
+  
+      
     }
-    return false
+    return false;
+    
   }
 
   function logout(){
@@ -53,7 +58,7 @@
 
   }
 
-  function createBadge(){
+  function createBadge(){// il manque des arguments 
 
   }
 
