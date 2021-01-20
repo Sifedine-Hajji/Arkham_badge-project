@@ -47,19 +47,31 @@
     session_start_once();
     session_destroy();
   }
+  function getAllBadges(){
+    $bdd = createCursor();
+    $getAllbadges = $bdd->query('SELECT img_badges, nom_badges, desc_badges FROM badges');
+    return $getAllbadges;
+  }
 
   function getBadges(){
     $bdd = createCursor();
 
     $getbadge = $bdd->query('SELECT img_badges, nom_badges, desc_badges FROM users_has_badges 
     INNER JOIN badges ON badges.id_badges = users_has_badges.fk_id_badge');
+    return $getbadge;
   }
+  function getAllUsers(){
+    $bdd = createCursor();
 
+    $getusers = $bdd->query('SELECT firstname, lastname, email, account_type FROM users');
+    return $getusers;
+  }
   function getUsers(){
     $bdd = createCursor();
 
     $getusers = $bdd->query('SELECT firstname, lastname,  FROM users_has_badges 
     INNER JOIN users ON users.id = users_has_badges.fk_id_user');
+    return $getusers;
   }
 
   function createBadge(){// il manque des arguments 

@@ -202,12 +202,20 @@ margin-top: 2%;
 }
 
 .list-group-item{
-margin-top: 4%;
-width: 120%;
-height: 20%;
-background: #F5F5F7 !important; 
-border-radius: 14px;
+  margin-top: 4%;
+  width: 140%;
+  height: 20%;
+  background: #F5F5F7 !important; 
+  border-radius: 14px;
 }
+.list-group-item img {
+  width: 80px;
+}
+.nom_desc {
+  width: 500px;
+  flex-direction: column;
+}
+
 
 /*---------------------------------------------ADD-BADGE------------------------------------------------------------*/
 
@@ -243,8 +251,6 @@ border-radius: 16px !important;
 
 .container-modal {
   position: absolute;
-  width: 100%;
-  height: 100%;
   text-align: center;
 }
 
