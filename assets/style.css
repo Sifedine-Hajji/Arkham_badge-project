@@ -117,7 +117,37 @@ html {
 .btn:hover{
   opacity: 0.8;
 }
-
+.nav {
+  width: 200px;
+    height: 100vh;
+    background: rgba(46, 46, 46, 0.466);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    display: flex;
+    flex-direction: column;
+}
+.nav img{
+  display: inline-block;
+    width:200px;
+    height: 200px;
+}
+.nav ul {
+  text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+  margin: 40px 0 50px 0;
+    color: #23A2FC;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav li:hover {
+  transform: scale(1.1);
+  text-shadow: white 1px 0 15px;
+}
 
 /*--------------------------------------------NAVBAR-MENU-------------------------------------------------------------*/
 
@@ -202,8 +232,8 @@ background-size: cover;
 
 .list-group{
   display: inline-block;
-  width: 720px;
-  height: 613px;
+  width: 740px;
+  height: 620px;
   max-height: 30;
   margin-left: 25px;
   padding: 0;
@@ -215,7 +245,7 @@ background-size: cover;
 
 .list-group-item{
   margin-top: 4%;
-  width: 700px;
+  width: 740px;
   height: 105px;
   border-radius: 14px;
 }
@@ -240,7 +270,7 @@ background-size: cover;
   background-color: rgba(0, 0, 0, 0.836);
   text-align: center;
   margin-bottom: 0;
-  width: 700px;
+  width: 740px;
 }
 /*---------------------------------------ADD-BADGE-----------------------------------*/
 
@@ -294,4 +324,6 @@ footer{
   margin-top: 10%;
 }
 
+
+/* MODAL CREATE A BADGE */
 
