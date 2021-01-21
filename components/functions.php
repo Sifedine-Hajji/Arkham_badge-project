@@ -66,8 +66,9 @@
       $result = $req->fetchColumn();
       $req->closeCursor();
       if (!$result) {
-          $req = $bdd->prepare("INSERT INTO badges (img_badges, nom_badges, desc_badges) VALUES('yo', ?, ?)");
+          $req = $bdd->prepare("INSERT INTO badges (img_badges, nom_badges, desc_badges) VALUES(?, ?, ?)");
           $req->execute([
+              strip_tags(trim($_POST['badgeImage'])),
               strip_tags(trim($_POST['badgeName'])),
               strip_tags(trim($_POST['badgeDesc'])),
           ]);
@@ -77,8 +78,6 @@
           echo "This badge is already existing";
       }
     }
-    
-
   }
 
   function editBadge($badge_id){
