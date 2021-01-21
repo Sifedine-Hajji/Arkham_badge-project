@@ -1,0 +1,294 @@
+
+
+/*----------------------------------------------GENERAL-------------------------------------------------------------*/
+
+body {
+  width:100%; 
+  height:100%;
+  background: #222223 !important; 
+}
+
+html {
+width:100%; height:100%;
+background: #222223 !important; 
+}
+
+.btn{
+  border-radius: 8px !important;
+  background-color: black !important;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+@font-face {
+  font-family: BatmanFont1;
+  src: url(./fonts/batmfa__.ttf);
+}
+@font-face {
+  font-family: BatmanFont2;
+  src: url(./fonts/batmfo__.ttf);
+}
+
+/*--------------------------------------------NAVBAR-MENU-------------------------------------------------------------*/
+
+
+.dashboardadmin{
+  background-color: #222223
+}
+
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 0.7;
+    background-color:#2C2C2C;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.98);
+    box-shadow: inset black 0 0 4px;
+}
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+
+  }
+  
+.sidenav a:hover {
+opacity: 0.3;
+}
+
+#logomenu {
+margin-left: 21%;
+
+}
+
+.menubutton{
+  margin-left: 29%;
+  margin-top: 20%;
+}
+
+#logoutbutton{
+  margin-left: 29%;
+  margin-top: 140%;
+
+}
+
+
+
+/*--------------------------------------------IMAGE-TOP-------------------------------------------------------------*/
+
+h2{
+  color: white;
+}
+
+.dashboardbatmanimage{
+background-image: url(../assets/images/otherbatmandash.png);
+width: 100%;
+height: 33%;
+background-size: cover;
+}
+
+.dashboardbatmanfilter{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.514);
+    background: linear-gradient(0deg, rgba(34, 34, 35, 1) 2%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+/*---------------------------------------------BADGES-LIST------------------------------------------------------------*/
+
+.list-group{
+width: 600px;
+margin-left: 19%;
+margin-top: 2%;
+}
+
+.list-group-item{
+margin-top: 4%;
+width: 120%;
+height: 20%;
+background: #F5F5F7 !important; 
+border-radius: 14px;
+}
+
+/*---------------------------------------------ADD-BADGE------------------------------------------------------------*/
+
+.card{
+flex-direction: column;
+float: right;
+margin-top: -50%;
+margin-right: 4%;
+background: linear-gradient(150.12deg, #18ACFF 0%, #557EF3 52.08%);
+box-shadow: inset 0px 0px 20px rgba(56, 102, 229, 0.34);
+border-radius: 16px !important;
+}
+
+#givebadge{
+  margin-left: 70%;
+}
+
+/*-----------------------------------------------ADMIN-PAGE-2-START-----------------------------------------------------------*/
+
+/*--------------------------------------------------ADD-GAMERS-BOX------------------------------------------------------------*/
+
+.addgamers{
+  width: 40%;
+  height: 20%;
+  background: linear-gradient(150.12deg, #18ACFF 0%, #557EF3 52.08%);
+  margin-left: 19%;
+  margin-top: 2%;
+  border-radius: 16px;
+}
+
+/*--------------------------------------------------ADD-GAMER-MODAL------------------------------------------------------------*/
+
+
+.container-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.container-modal button {
+  position: relative;
+}
+
+
+/*--------------------------------------------------GAMERS-LIST-------------------------------------------------------------*/
+
+img#gamerprofilepic{
+  width: 10%;
+  height: 120%;
+}
+
+
+/*-----------------------------------------------PLAYER-DASHBOARD--START-----------------------------------------------------------*/
+/*---------------------------------------------------PROFILE-PLAYER--------------------------------------------------------------*/
+
+.profileplayer{
+background-color:#343333 ;
+width: 40%;
+height: 25%;
+margin-left: 19%;
+margin-top: 3%;
+border-radius: 13px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*-------------------------------------------------GAMERS-ACQUIRED-BADGES------------------------------------------------------------*/
+
+.playerbadges{
+  margin-top: 4%;
+  padding-top: 10px;
+  padding-bottom: 10px ;
+  padding-left: 10px ;
+  width: 70%;
+  height: 20%;
+  background: #F5F5F7 !important; 
+  border-radius: 14px;
+  box-shadow: 0px 3px 3px black;
+
+  
+}
+
+.playerbadges:hover{
+  box-shadow: 0px 3px 3px gray;
+}
+
+img#gamerprofilepic{
+  width: 24%;
+  height: 80%;
+  border-radius: 14px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top:3%;
+  margin-left:3%;
+}
+
+.textaboutbadges{
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 30%;
+  margin-top: -17%;
+}
+
+
+/*-------------------------------------------------SCROLLBAR-------------------------------------------------------------*/
+
+.allbadges{
+  background-color: royalblue;
+  border-radius: 10px;
+  box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.55);
+}
+
+#imgbadge {
+  border-radius: 13px;
+}
+
+.descriptionbadge{
+  color:white;
+  font-weight: lighter;
+}
+
+
+h3.namebadge { 
+  color: white;
+  font-size: 17px ;
+  font-family: Batmanfont1;
+}
+
+#titleallbadges{
+  display: inline;
+  font-family: BatmanFont1;
+  color: white;
+  text-shadow: 0px 5px 5px black;
+  justify-content: center;
+  font-size: 29px;
+}
+
+.listofbadges{
+  margin-left: -30%;
+}
+
+
+.custom-scrollbar-js,
+.custom-scrollbar-css {
+  height: 360px;
+}
+
+.custom-scrollbar-css {
+  overflow-y: scroll;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #00d2ff;
+  background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
+}
+
+
+
+/*-------------------------------------------------FOOTER-------------------------------------------------------------*/
+
+footer{
+  margin-top: 10%;
+}
+
