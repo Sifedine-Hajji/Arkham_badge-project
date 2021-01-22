@@ -35,17 +35,15 @@ With following features included:
 
 # Management
 
+### Github
+We used Github to share our codes and keep track of eachothers work evolution.
+
 ### Mockup
 We started out by making a mockup of our website, click [here](https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down) to view the prototype.
 
 ### Database
 You can find an image of our database architecture down below.
 ![image](./assets/database.png)
-
-
-### Github
-
-We used Github to share our codes and keep track of eachothers work evolution.
 
 
 # Improvement points
