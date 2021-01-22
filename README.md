@@ -16,7 +16,6 @@ As a part of our training at Becode, we were asked to create a fullstack app ded
 Our objectives for this project were to create a fullstack application with a relational database,many-to-many relationships.
 We have to create a basic permission system which allows badge administrators as well as users to log in to their account.
 
-
 # Following technologies were used
 
 * HTML
@@ -29,18 +28,19 @@ We have to create a basic permission system which allows badge administrators as
 # Management
 
 ### Mockup
-We started out by making a mockup of our website, click [here](https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down) to view the prototype.
+We started out by making a mockup of our website, click [here](https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down)to view the prototype.
 
 ### Database
-You can find an image of the database architecture [here] .
+You can find an image of our database architecture [here] .
 
 
 ### Github
 
-We used Github to share our codes and keep track of eachothers' work evolution.
+We used Github to share our codes and keep track of eachothers work evolution.
 
 
 # Improvement points
+
 
 * 
 
