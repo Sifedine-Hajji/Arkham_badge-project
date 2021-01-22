@@ -49,6 +49,7 @@ $desc = '';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <title>Admin</title>
 </head>
 <body>
@@ -64,12 +65,12 @@ $desc = '';
                         Badge Name: <input type="text" name="name" value="<?php echo $name ?>" placeholder="Enter a name"/><br><br>
                         Badge Description: <input type="" name="desc" value="<?php echo $desc ?>" placeholder="Enter a description"/><br><br>
                         
-                        <button type="submit" name="insert"> INSERT</button>
-                        <button type="submit" name="display"> DISPLAY</button>
-                        <button type="submit" name="search"> SEARCH</button>
-                        <button type="submit" name="update"> UPDATE</button>
-                        <button type="submit" name="delete"> DELETE</button>
-                        <button type="submit" name="rowcount"> ROW COUNT</button>
+                        <button type="submit" class="btn btn-primary" name="insert"> INSERT</button>
+                        <button type="submit" class="btn btn-primary" name="display">DISPLAY</button>
+                        <button type="submit" class="btn btn-primary" name="search"> SEARCH</button>
+                        <button type="submit" class="btn btn-primary" name="update"> UPDATE</button>
+                        <button type="submit" class="btn btn-primary" name="delete"> DELETE</button>
+                        <button type="submit" class="btn btn-primary" name="rowcount"> ROW COUNT</button>
 
                     </center><br><br>
                 </td>
