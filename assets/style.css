@@ -258,7 +258,7 @@ width:100%; height:100%;
     padding-top: 20px;
     box-shadow: 0 8px 32px 0 black;
     backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );*/
+    -webkit-backdrop-filter: blur( 4px );
 }
   
 .sidenav a {
@@ -282,11 +282,15 @@ margin-left: 21%;
 .menubutton{
   margin-left: 29%;
   margin-top: 20%;
+  filter: drop-shadow(4px 4px 4px black);
+
 }
 
 #logoutbutton{
   margin-left: 29%;
   margin-top: 140%;
+  filter: drop-shadow(5px 5px 5px black);
+
 
 }
 
@@ -315,6 +319,8 @@ background-size: cover;
 /*---------------------------------------------BADGES-LIST------------------------------------------------------------*/
 
 .list-group{
+display: flex;
+flex-direction: column;
 width: 600px;
 margin-left: 19%;
 margin-top: 2%;
@@ -331,13 +337,17 @@ border-radius: 14px;
 /*---------------------------------------------ADD-BADGE------------------------------------------------------------*/
 
 .card{
+display: flex;
 flex-direction: column;
+justify-content: center;
 float: right;
 margin-top: -50%;
 margin-right: 4%;
 background: linear-gradient(150.12deg, #18ACFF 0%, #557EF3 52.08%);
 box-shadow: inset 0px 0px 20px rgba(56, 102, 229, 0.34);
 border-radius: 16px !important;
+position: fixed;
+display: flex;
 }
 
 #givebadge{
@@ -434,9 +444,9 @@ img#gamerprofilepic{
 /*-------------------------------------------------SCROLLBAR-------------------------------------------------------------*/
 
 .allbadges{
-  background-color: royalblue;
+  box-shadow: 0 2px 8px 0 black;
+  backdrop-filter: blur( 4px );
   border-radius: 10px;
-  box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.55);
 }
 
 #imgbadge {
@@ -447,7 +457,6 @@ img#gamerprofilepic{
   color:white;
   font-weight: lighter;
 }
-
 
 h3.namebadge { 
   color: white;
