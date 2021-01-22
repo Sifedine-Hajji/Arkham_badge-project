@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../assets/style.css" rel="stylesheet">
+    <link rel="icon" href="../assets/favicon.ico" />
     <title> Dashboard </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -16,11 +17,13 @@
     include("../components/navbar.php");
 ?>
 
-
 <!------------------------------------------MODAL--ADD-GAMER------------------------------------------------>
 
 
-<div class ="addgamers">
+<div class ="addgamers"> 
+</div>
+
+
 <div class="container-modal">
   <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#Modal">Add gamer</button>
 </div>
@@ -58,7 +61,6 @@
   </div>
 </div>
 
-</div>
 
  
 
