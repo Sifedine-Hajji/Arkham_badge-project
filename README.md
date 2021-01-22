@@ -39,7 +39,7 @@ With following features included:
 We used Github to share our codes and keep track of eachothers work evolution.
 
 ### Mockup
-We started out by making a mockup of our website, click [here](https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down) to view the prototype.
+We started out by making a mockup of our website in Figma, click [here](https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down) to view our mockup.
 
 ### Database
 You can find an image of our database architecture down below.
