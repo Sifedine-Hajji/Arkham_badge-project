@@ -2,10 +2,10 @@
 
 # Team Members
 
-- Ayoube El Yazizi
-- Sifedine Hajji
-- Maxime Nef
-- Dena Babaie
+- [Ayoube El Yazizi](https://github.com/ayoubelyazizi)
+- [Sifedine Hajji](https://github.com/Sifedine-Hajji)
+- [Maxime Nef](https://github.com/MaximeNef)
+- [Dena Babaie](https://github.com/denababaie)
 
 # Instructions
 
