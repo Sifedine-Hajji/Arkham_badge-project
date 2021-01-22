@@ -1,0 +1,642 @@
+
+         /* -------css login page ----------*/
+.bodylogin{
+    background: url("batman_17-wallpaper-1920x1080.jpg") center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 black;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 30px;
+width: 33%;
+margin: auto;
+margin-top: 30vh;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.logs, .sub{
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.email1, .psw1{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 6px ;
+    width: 250px;
+    opacity:75% ; 
+
+
+    /* background: linear-gradient(225deg,transparent, black );
+    color: white;
+    border-radius: 10px;
+    padding: 6px ;
+    width: 250px;
+    opacity:95% ;  */
+}
+
+.batman{
+    text-shadow: 1px 1px 2px white;
+    color: black;
+    font-size: xxx-large;
+    margin: auto;
+    letter-spacing: 10px;
+ 
+    
+}
+
+
+::placeholder{
+    color: white;
+}
+.butlog{
+    color: white;
+    border-radius: 10px;
+    width: 156px;
+    height: 30px;
+    border-radius: 50px;
+    background: linear-gradient(225deg, black, transparent);
+    box-shadow:  -30px 30px 60px transparent,
+                 30px -30px 60px transparent;
+}
+
+
+@font-face {
+  font-family: BatmanFont1;
+  src: url(./fonts/batmfa__.ttf);
+}
+@font-face {
+  font-family: BatmanFont2;
+  src: url(./fonts/batmfo__.ttf);
+}
+
+
+html {
+width:100%;
+max-height: 100%;
+}
+
+/* =================================================== WELCOME PAGE =================================================================== */
+.welcomeBody {
+  margin: 0;
+  padding: 0;
+  background: url(./images/Batmanwelcomebackground.jpg) !important;
+  background-size: cover;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.leftContainer {
+  width: 200px;
+  height: 100%;
+  background: rgba(46, 46, 46, 0.466);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  display: flex;
+  flex-direction: column;
+  
+}
+.leftContainer img {
+  display: inline-block;
+  width:200px;
+  height: 200px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+  filter: drop-shadow(5px 18px 18px black);
+}
+
+.leftContainer ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.leftContainer h3 {
+  color: black;
+} 
+.leftContainer p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.leftContainer li {
+  margin: 5px 0 5px 0;
+  color: white;
+  font-size: 20px;
+} 
+.welcomeTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background:rgba(0, 0, 0, 0.534) ;
+} 
+
+.welcomeTitle h1 {
+  display: inline-block;
+  font-size: 100PX;
+  margin: 0;
+  font-family: BatmanFont1;
+}
+.welcomeTitle h2 {
+  display: inline-block;
+  margin: 0;
+  font-family: BatmanFont2;
+  color: #38B6FF;
+  font-size: 26px;
+}
+
+.WelcomeButton {
+  margin-top: 20px;
+  padding: 20px 40px 20px 40px;
+  color: white;
+  border-radius: 50px;
+  font-size: 25px;
+  text-shadow: #38B6FF 1px 0 15px;
+  font-family: BatmanFont1;
+  border: none;
+  background: rgba(0, 0, 0, 0.514) ;
+  cursor: pointer;
+}
+
+
+.WelcomeButton:hover {
+  transform: scale(1.05);
+  background: rgba(212, 212, 212, 0.774);
+  color: black;
+  text-shadow: none;
+}
+.WelcomeButton:focus {
+  outline: none;
+}
+.WelcomeButton a {
+  text-decoration: none;
+  color: white;
+}
+.WelcomeButton a:hover {
+  color: black;
+}
+.WelcomeButton a:visited {
+  display: none;
+}
+
+
+/*-----------------------------LOG-IN-PAGE------------------------------------------*/
+.loginContainer {
+  height: 65vh;
+}
+.bodylogin{
+  background: url(../assets/images/Batmanwelcomebackground.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  margin-top:0;
+}
+
+.bodylogin img{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+  filter: drop-shadow(5px 18px 18px black);
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(46, 46, 46, 0.466);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 30px;
+  width: 25%;
+  height: 47%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin-left: 37%;
+  margin-right: auto;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+     
+.logs, .sub{
+  margin: 20px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+      
+.email1, .psw1{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 6px ;
+  width: 60%;
+  opacity:75% ; 
+}
+      
+.login h2{
+  text-shadow: 1px 1px 2px black;
+  color: white;
+  font-size: xxx-large;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-family: BatmanFont2;
+}
+ 
+::placeholder{
+  color: white;
+}
+.login svg {
+  width: 30px;
+}
+.login input {
+  width: 80%;
+  height: 30px;
+}   
+     
+.login button{
+  padding: 15px 40px 15px 40px;
+  color: white;
+  border-radius: 50px;
+  font-size: 15px;
+  text-shadow: #38B6FF 1px 0 15px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background: rgba(0, 0, 0, 0.514) ;
+  cursor: pointer;
+  font-family: BatmanFont1;
+}
+
+.login button:hover{
+  transform: scale(1.1);
+  background-color: #38B6FF;
+  color: black
+}
+
+
+
+
+
+/*----------------------------------------------GENERAL-------------------------------------------------------------*/
+
+body {
+  width:100%; 
+  height:100%;
+  background: #222223 !important; 
+}
+
+html {
+width:100%; height:100%;
+/*background: #222223 !important; */
+}
+
+.btn{
+  border-radius: 8px !important;
+  background-color: black !important;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+@font-face {
+  font-family: BatmanFont1;
+  src: url(./fonts/batmfa__.ttf);
+}
+@font-face {
+  font-family: BatmanFont2;
+  src: url(./fonts/batmfo__.ttf);
+}
+
+/*--------------------------------------------NAVBAR-MENU-------------------------------------------------------------*/
+
+
+.dashboardadmin{
+  background-color: #222223
+}
+
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 0 8px 32px 0 black;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+
+}
+  
+.sidenav a:hover {
+opacity: 0.3;
+}
+
+#logomenu {
+margin-left: 21%;
+
+}
+
+.menubutton{
+  margin-left: 29%;
+  margin-top: 20%;
+  filter: drop-shadow(4px 4px 4px black);
+
+}
+
+#logoutbutton{
+  margin-left: 29%;
+  margin-top: 140%;
+  filter: drop-shadow(5px 5px 5px black);
+
+
+}
+
+
+
+/*--------------------------------------------IMAGE-TOP-------------------------------------------------------------*/
+
+h2{
+  color: white;
+}
+
+.dashboardbatmanimage{
+background-image: url(../assets/images/otherbatmandash.png);
+width: 100%;
+height: 33%;
+background-size: cover;
+}
+
+.dashboardbatmanfilter{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.514);
+    background: linear-gradient(0deg, rgba(34, 34, 35, 1) 2%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+/*---------------------------------------------BADGES-LIST------------------------------------------------------------*/
+
+.list-group{
+display: flex;
+flex-direction: column;
+width: 720px;
+height: 590px;
+overflow: auto;
+margin-left: 19%;
+margin-top: 2%;
+}
+.list-group::-webkit-scrollbar {
+  display: none;
+}
+
+.list-group-item{
+margin-top: 4%;
+width: 720px;
+height: 20%;
+background: #F5F5F7 !important; 
+border-radius: 14px;
+}
+.list-group-item img {
+  width: 80px;
+}
+.imgbadge_textDesc {
+  width: 600px;
+}
+
+/*---------------------------------------------ADD-BADGE------------------------------------------------------------*/
+
+.card{
+background: linear-gradient(150.12deg, #18ACFF 0%, #557EF3 52.08%);
+box-shadow: inset 0px 0px 20px rgba(56, 102, 229, 0.34);
+border-radius: 16px !important;
+display: flex;
+}
+
+#givebadge{
+  margin-left: 70%;
+}
+
+/*-----------------------------------------------ADMIN-PAGE-2-START-----------------------------------------------------------*/
+
+/*--------------------------------------------------ADD-GAMERS-BOX------------------------------------------------------------*/
+
+.addgamers{
+  width: 75%;
+  height: 20%;
+  background: url(./images/otherbatmandash.png);
+  margin-left: 19%;
+  border-radius: 16px;
+}
+
+/*--------------------------------------------------ADD-GAMER-MODAL------------------------------------------------------------*/
+
+
+.container-modal {
+  position: absolute;
+  text-align: center;
+
+}
+
+.container-modal button {
+  position: relative;
+}
+
+
+
+/*--------------------------------------------------GAMERS-LIST-------------------------------------------------------------*/
+
+img#gamerprofilepic{
+  width: 10%;
+  height: 120%;
+}
+.usersContainer {
+  height: 35vh;
+}
+.usersContainer img {
+  height: 10vh;
+}
+
+
+/*-----------------------------------------------PLAYER-DASHBOARD--START-----------------------------------------------------------*/
+/*---------------------------------------------------PROFILE-PLAYER--------------------------------------------------------------*/
+
+.profileplayer{
+background-color:#343333 ;
+width: 40%;
+height: 25%;
+margin-left: 19%;
+margin-top: 3%;
+border-radius: 13px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*-------------------------------------------------GAMERS-ACQUIRED-BADGES------------------------------------------------------------*/
+
+.playerbadges{
+  margin-top: 4%;
+  padding-top: 10px;
+  padding-bottom: 10px ;
+  padding-left: 10px ;
+  width: 70%;
+  height: 20%;
+  background: #F5F5F7 !important; 
+  border-radius: 14px;
+  box-shadow: 0px 3px 3px black;
+
+  
+}
+
+.playerbadges:hover{
+  box-shadow: 0px 3px 3px gray;
+}
+
+img#gamerprofilepic{
+  width: 24%;
+  height: 80%;
+  border-radius: 14px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top:3%;
+  margin-left:3%;
+}
+
+.textaboutbadges{
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 30%;
+  margin-top: -17%;
+}
+
+
+/*-------------------------------------------------SCROLLBAR-------------------------------------------------------------*/
+
+.allbadges{
+  box-shadow: 0 2px 8px 0 black;
+  backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+
+#imgbadge {
+  border-radius: 13px;
+}
+
+.descriptionbadge{
+  color:white;
+  font-weight: lighter;
+}
+
+h3.namebadge { 
+  color: white;
+  font-size: 17px ;
+  font-family: Batmanfont1;
+}
+
+#titleallbadges{
+  display: inline;
+  font-family: BatmanFont1;
+  color: white;
+  text-shadow: 0px 5px 5px black;
+  justify-content: center;
+  font-size: 29px;
+}
+
+.listofbadges{
+  margin-left: -30%;
+}
+
+
+.custom-scrollbar-js,
+.custom-scrollbar-css {
+  height: 360px;
+}
+
+.custom-scrollbar-css {
+  overflow-y: scroll;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #00d2ff;
+  background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%);
+}
+
+/*-------------------------------------------------FOOTER-------------------------------------------------------------*/
+
+footer{
+  margin-top:2%;
+  text-align: center;
+  color: white;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin-left:5%;
+  color: white;
+  width: 100%;
+  margin: 0;
+
+}
+
+.inputlogout{
+    background: url("../assets/images/logoutbutton.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    
+}
+
+
+/* <--------------modal scroll-------------------> */
+
+  .dropdown-menu.show {
+    display: contents !important;
+}
+.img_badge{
+    margin-left: 41%;
+}
+.ContainerCard{
+  width: 800px;
+  margin-left: 5%;
+}
