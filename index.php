@@ -1,7 +1,9 @@
 <?php
  
   include_once('components/functions.php');
- 
+
+  getAllUsers();
+  
 
 ?>
 
@@ -25,8 +27,17 @@
   <?php
   
   if(isAuthenticated()){
-    header('location:./pages/dashboardadmin.php');
-    // logout();
+    if($_SESSION['account_type'] == 'ADMIN'){
+        header('location:./pages/dashboardadmin.php');
+    }else{
+      header('location:./pages/dashboard.php');
+    }
+    
+    
+    
+   
+        // header('Location: dashboard.php');
+    
     
   }else {
    

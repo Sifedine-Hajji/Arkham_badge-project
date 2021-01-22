@@ -15,6 +15,7 @@
 
 <?php 
     include("../components/navbar.php");
+    
 ?>
 
 <!------------------------------------------LIST--OF-BADGES------------------------------------------------>
@@ -27,42 +28,27 @@
 
 
 <ul class="list-group">
-    <h2>Badges</h2>
+  <h2>Badges</h2>
    
-    <li class="list-group-item"> <img src="../assets/images/20.jpg"> 
-     Badge
-    <button type="button" class="btn btn-dark">Give badge</button>
-    </li>
-   
-    <li class="list-group-item"> <img src="../assets/images/20.jpg">  Badge 
-    <button type="button" class="btn btn-dark">Give badge</button>
-    </li>
-   
-    <li class="list-group-item"> <img src="../assets/images/20.jpg">  Badge 
-    <button type="button" class="btn btn-dark">Give badge</button>
-    </li>
-   
-    <li class="list-group-item"> <img src="../assets/images/20.jpg">  Badge 
-    <button type="button" class="btn btn-dark">Give badge</button>
-    </li>
-   
-    <li class="list-group-item"> <img src="../assets/images/20.jpg">  Badge 
-    <button type="button" class="btn btn-dark">Give badge</button>
-    </li>
-
-    <li class="list-group-item"> <img src="../assets/images/20.jpg">  Badge 
-    <button type="button" class="btn btn-dark">Give badge</button id=givebadge>
-    </li>
-
-    <li class="list-group-item"> <img src="../assets/images/20.jpg">  Badge 
-    <button type="button" class="btn btn-dark">Give badge</button id=givebadge>
-    </li>
-
-    <li class="list-group-item"> <img src="../assets/images/20.jpg">  Badge 
-    <button type="button" class="btn btn-dark">Give badge</button id=givebadge>
-    </li>
+  <?php
     
-    
+    $getAllbadge = getAllBadges();
+    while($donnees = $getAllbadge->fetch()){
+  
+      echo'<li class="list-group-item d-flex justify-content-around">',
+      
+            '<img src=',$donnees['img_badges'],'>',
+            '<div class="nom_desc d-flex">','<p>',$donnees['nom_badges'],'</p>',
+                    '<p>',$donnees['desc_badges'],'</p>',
+            '</div>',
+            '<div class="my-auto">',
+            '<button type="button" class="btn btn-dark">Edit</button>',
+            '</div>',
+          '</li>';        
+
+    }
+
+  ?>
 </ul>
 
 <!------------------------------------------CREATE--A-BADGE------------------------------------------------>
