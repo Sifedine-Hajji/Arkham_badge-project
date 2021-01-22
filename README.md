@@ -39,7 +39,8 @@ With following features included:
 We started out by making a mockup of our website, click [here](https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down) to view the prototype.
 
 ### Database
-You can find an image of our database architecture [here] .
+You can find an image of our database architecture down below.
+![image](./assets/database.png)
 
 
 ### Github
