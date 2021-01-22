@@ -36,7 +36,7 @@ With following features included:
 # Management
 
 ### Mockup
-We started out by making a mockup of our website, click [here] (https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down)to view the prototype.
+We started out by making a mockup of our website, click [here]https://www.figma.com/proto/IkddLsjnkBUejtnmaTPa5n/Gaming-Arkham?node-id=4%3A688&scaling=scale-down)to view the prototype.
 
 ### Database
 You can find an image of our database architecture [here] .
