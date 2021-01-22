@@ -1,6 +1,10 @@
 <?php
-  session_start();
-  include('./components/functions.php');
+ 
+  include_once('components/functions.php');
+
+  getAllUsers();
+  
+
 ?>
 
 
@@ -21,20 +25,26 @@
 <body class="welcomeBody">
 
   <?php
-    include('./pages/welcome.php');
+  
+  if(isAuthenticated()){
+    if($_SESSION['account_type'] == 'ADMIN'){
+        header('location:./pages/dashboardadmin.php');
+    }else{
+      header('location:./pages/dashboard.php');
+    }
+    
+    
+    
+   
+        // header('Location: dashboard.php');
+    
+    
+  }else {
+   
+    include('pages/login.php');
+    
+  }
   ?>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>

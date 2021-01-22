@@ -1,6 +1,6 @@
 <?php
 
-include_once('../components/functions.php');
+include_once('./components/functions.php');
 
 
 if(!empty($_POST["email"])){   
@@ -53,7 +53,7 @@ if(login($_POST["email"],$_POST["password"])){
 
 
 <?php 
-    include("../components/footer.php");
+    include_once("./components/footer.php");
 ?>
 
 

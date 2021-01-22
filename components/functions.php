@@ -49,21 +49,30 @@
   }
   function getAllBadges(){
     $bdd = createCursor();
-    $getAllbadges = $bdd->query('SELECT img_badges, nom_badges, desc_badges FROM badges');
+    $getAllbadges = $bdd->query('SELECT id_badges, img_badges, nom_badges, desc_badges FROM badges');
     return $getAllbadges;
   }
 
   function getBadges(){
     $bdd = createCursor();
 
-    $getbadge = $bdd->query('SELECT img_badges, nom_badges, desc_badges FROM users_has_badges 
-    INNER JOIN badges ON badges.id_badges = users_has_badges.fk_id_badge');
-    return $getbadge;
+    $getbadge = $bdd->query('SELECT img_badges, nom_badges, desc_badges, firstname FROM users_has_badges
+     INNER JOIN badges ON badges.id_badges = users_has_badges.fk_id_badge 
+     INNER JOIN users ON users.id = users_has_badges.fk_id_user'  );
+     while($badgeplz=$getbadge->fetch()){
+ 
+ ?> 
+ <img src="<?php echo $badgeplz['img_badges']?>"> <?php
+ ;
+
+     }
+    
   }
+
+
   function getAllUsers(){
     $bdd = createCursor();
-
-    $getusers = $bdd->query('SELECT firstname, lastname, email, account_type FROM users');
+    $getusers = $bdd->query('SELECT id, firstname, lastname, email, account_type FROM users');
     return $getusers;
   }
   function getUsers(){
@@ -74,41 +83,13 @@
     return $getusers;
   }
 
-  function createBadge(){
+
+  function grantBadgeToUser($id, $id_badges){
     $bdd = createCursor();
-    if (!empty($_POST['badgeName']) && !empty($_POST['badgeDesc'])) {
-      $req = $bdd->prepare("SELECT EXISTS(SELECT nom_badges FROM badges WHERE nom_badges = ?)");
-      $req->execute([filter_var($_POST['badgeName'])]);
-      $result = $req->fetchColumn();
-      $req->closeCursor();
-      if (!$result) {
-          $req = $bdd->prepare("INSERT INTO badges (img_badges, nom_badges, desc_badges) VALUES(?, ?, ?)");
-          $req->execute([
-              strip_tags(trim($_POST['badgeImage'])),
-              strip_tags(trim($_POST['badgeName'])),
-              strip_tags(trim($_POST['badgeDesc'])),
-          ]);
-          $req->closeCursor();
-          echo "New badge has been created!";
-      } else {
-          echo "This badge is already existing";
-      }
-    }
-  }
-
-  function editBadge($badge_id){ // requete sql update (nom_badge,desc_badge.......)
-
-  }
-
-  function removeBadge($badge_id){
-    require('db.php');
-    $badge_id=$_REQUEST['id'];
-    $query = "DELETE FROM new_record WHERE id=$id"; 
-    $result = mysqli_query($con,$query) or die ( mysqli_error());
-    header("Location: view.php"); 
-  }
-
-  function grantBadgeToUser($badge_id, $user_id){
-
+    $gbu = $bdd->prepare(
+      'INSERT INTO users_has_badges (fk_id_user,fk_id_badge)
+       VALUES(?,?)');
+       $gbu->execute([$id,$id_badges]);
+      
   }
 

@@ -15,6 +15,7 @@
 
 <?php 
     include("../components/navbar.php");
+    
 ?>
 
 <!------------------------------------------LIST--OF-BADGES------------------------------------------------>
@@ -53,7 +54,7 @@
       </ul>
 
 
-      <div class="card" style="width: 18rem; height: 22vh">
+  <div class="card" style="width: 18rem; height: 22vh">
   <div class="card-body">
     <h5 class="card-title">Create a new badge </h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
