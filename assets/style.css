@@ -6,6 +6,8 @@
   font-family: BatmanFont2;
   src: url(./fonts/batmfo__.ttf);
 }
+
+
 html {
 width:100%;
 max-height: 100%;
@@ -15,19 +17,19 @@ max-height: 100%;
 .welcomeBody {
   margin: 0;
   padding: 0;
-  background: url(./images/batman_17-wallpaper-1920x1080.jpg) !important;
+  background: url(./images/injustice_2_batman-wallpaper-1920x1200.jpg) !important;
   background-size: cover;
 }
+
 .mainContainer {
   width: 100%;
   height: 100%;
   display: flex;
-
 }
 
 .leftContainer {
   width: 200px;
-  height: 100vh;
+  height: 100%;
   background: rgba(46, 46, 46, 0.466);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur( 1.5px );
@@ -40,18 +42,23 @@ max-height: 100%;
   display: inline-block;
   width:200px;
   height: 200px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+  filter: drop-shadow(5px 18px 18px black);
 }
+
 .leftContainer ul {
   text-align: center;
   list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 .leftContainer p {
   font-size: 30px;
   font-weight: bold;
-  text-decoration: underline solid black;
+  color: white;
 }
+
 .leftContainer li {
   margin: 5px 0 5px 0;
   color: white;
@@ -109,30 +116,44 @@ max-height: 100%;
 
 /*----------------------------------------------LOG-IN-PAGE-----------------------------------------------------------*/
 
-
 .bodylogin{
-          background: url(../assets/images/batman_17-wallpaper-1920x1080.jpg) !important;
+          background: url(../assets/images/injustice_2_batman-wallpaper-1920x1200.jpg) !important;
           background-repeat: no-repeat;
           background-size: cover;
-        
+          width: 100%;
+          height: 100%;
+          margin:0;
+          margin-top:0;
+}
+
+.bodylogin img{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  -webkit-filter: drop-shadow(5px 5px 5px black);
+  filter: drop-shadow(5px 18px 18px black);
 }
 
 .login{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background: rgba( 255, 255, 255, 0.25 );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba( 255, 255, 255, 0.25 );
       box-shadow: 0 8px 32px 0 black;
       backdrop-filter: blur( 4px );
       -webkit-backdrop-filter: blur( 4px );
       border-radius: 30px;
       width: 33%;
-      margin: auto;
-      margin-top: 30vh;
+      height: 47%;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      margin-left: 37%;
+      margin-right: auto;
       border: 1px solid rgba( 255, 255, 255, 0.18 );
+      font-family: 'Poppins', sans-serif;
 }
-      
+     
 .logs, .sub{
           margin: 20px;
           justify-content: center;
@@ -145,44 +166,44 @@ max-height: 100%;
           color: white;
           border-radius: 10px;
           padding: 6px ;
-          width: 250px;
+          width: 60%;
           opacity:75% ; 
-      
-      
-          /* background: linear-gradient(225deg,transparent, black );
-          color: white;
-          border-radius: 10px;
-          padding: 6px ;
-          width: 250px;
-          opacity:95% ;  */
 }
       
 .batman{
-          text-shadow: 1px 1px 2px white;
-          color: black;
+          text-shadow: 1px 1px 2px black;
+          color: white;
           font-size: xxx-large;
-          margin: auto;
-          letter-spacing: 10px;
-       
-          
+          margin: auto;          
 }
-      
-      
+
+.login h2{
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+ 
 ::placeholder{
           color: white;
 }
      
      
-button{
-          color: white;
-          border-radius: 10px;
-          width: 156px;
-          height: 30px;
-          border-radius: 50px;
-          background: linear-gradient(225deg, black, transparent);
-          box-shadow:  -30px 30px 60px transparent,
-                       30px -30px 60px transparent;
-  }
+.login button{
+  padding: 10px 40px 10px 40px;
+  color: white;
+  border-radius: 50px;
+  font-size: 15px;
+  text-shadow: #38B6FF 1px 0 15px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  background: rgba(0, 0, 0, 0.514) ;
+  cursor: pointer;
+}
+
+.login button:hover{
+  background: linear-gradient(225deg, white, transparent);
+  color: black
+}
 
 
 
@@ -198,7 +219,7 @@ body {
 
 html {
 width:100%; height:100%;
-background: #222223 !important; 
+/*background: #222223 !important; */
 }
 
 .btn{
@@ -475,6 +496,15 @@ h3.namebadge {
 /*-------------------------------------------------FOOTER-------------------------------------------------------------*/
 
 footer{
-  margin-top: 10%;
+  padding: 0.4%;
+  margin-top:2%;
+  text-align: center;
+  color: white;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin-left:5%;
+  color: white;
+
 }
 
