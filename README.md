@@ -1,5 +1,5 @@
 # Badge project
-[here](https://sifedinehajji.go.yj.fr/)
+[Link to our Arkham Badge website](https://sifedinehajji.go.yj.fr/)
 # Team Members
 
 - [Ayoube El Yazizi](https://github.com/ayoubelyazizi)
@@ -47,11 +47,9 @@ You can find an image of our database architecture down below.
 
 
 # Improvement points
+* Responsiveness
+* More features such as adding a stats view
+* Have the each users' badges listed in their own account
 
-
-* 
-
-
-# Web Hosting
 
 #### Fair use disclaimer this website is for educational purposes only.
