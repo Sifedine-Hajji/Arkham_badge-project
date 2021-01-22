@@ -9,7 +9,7 @@
 
 # Instructions
 
-We were asked to create a fullstack app dedicated to badge attribution.
+As part of our training at Becode, we were asked to create a fullstack app dedicated to badge attribution.
 
 ## Objectives
 
