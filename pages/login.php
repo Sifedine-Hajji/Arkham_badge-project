@@ -1,12 +1,13 @@
 <?php
+include_once('../components/functions.php');
+session_start_once();
 
-include_once('./components/functions.php');
+
 
 
 if(!empty($_POST["email"])){   
 if(login($_POST["email"],$_POST["password"])){
-    echo'<p>log ok</p>';
-    header("location:index.php");
+    header("location:../index.php");
 }else{
     echo'<p>log pas ok</p>';
 }
@@ -15,6 +16,18 @@ if(login($_POST["email"],$_POST["password"])){
 
 
 }
+  if(isAuthenticated()){
+    if($_SESSION['account_type'] == 'ADMIN'){
+        header('location:./dashboardadmin.php');
+    }else{
+      header('location:./dashboardplayer.php');
+    }
+    
+    
+    
+   
+    }
+
 ?>
 
 
@@ -53,7 +66,7 @@ if(login($_POST["email"],$_POST["password"])){
 
 
 <?php 
-    include_once("./components/footer.php");
+    include_once("../components/footer.php");
 ?>
 
 

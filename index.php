@@ -23,28 +23,11 @@
 </head>
 
 <body class="welcomeBody">
+<?php  
+  include('./pages/welcome.php')
+?>
 
-  <?php
-  
-  if(isAuthenticated()){
-    if($_SESSION['account_type'] == 'ADMIN'){
-        header('location:./pages/dashboardadmin.php');
-    }else{
-      header('location:./pages/dashboard.php');
-    }
-    
-    
-    
-   
-        // header('Location: dashboard.php');
-    
-    
-  }else {
-   
-    include('pages/login.php');
-    
-  }
-  ?>
+
 </body>
 
 </html>
