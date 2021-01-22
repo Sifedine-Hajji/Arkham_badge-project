@@ -71,7 +71,7 @@
   <div class="card-body">
     <h5 class="card-title">Create a new badge </h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-dark">Create badge </a>
+    <a href="../components/badge_controller.php" target="_blank" class="btn btn-dark">Create badge </a>
   </div>
 </div>
 

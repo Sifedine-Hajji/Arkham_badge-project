@@ -9,6 +9,7 @@ $id = '';
 $img = '';
 $name = '';
 $desc = '';
+//-----------------------------------------SEARCH---------------------------------//
     if(isset($_POST['search']))
     {
         $id = $_POST['id'];
@@ -50,6 +51,7 @@ $desc = '';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Admin</title>
 </head>
 <body>
@@ -60,17 +62,17 @@ $desc = '';
             <tr>
                 <td>
                     <center>
-                        Search a badge by ID: <input type="text" name="id" value="<?php echo $id ?>"  placeholder="Enter an ID"/><br><br>
-                        Badge Image: <input type="text" name="img" value="<?php echo $img ?>" placeholder="Enter image path"/><br><br>
-                        Badge Name: <input type="text" name="name" value="<?php echo $name ?>" placeholder="Enter a name"/><br><br>
-                        Badge Description: <input type="" name="desc" value="<?php echo $desc ?>" placeholder="Enter a description"/><br><br>
+                        <p>Search a badge by ID:</p> <input type="text" name="id" value="<?php echo $id ?>"  placeholder="Enter an ID"/><br><br>
+                        <p>Badge Image:</p> <input type="text" name="img" value="<?php echo $img ?>" placeholder="Enter image path"/><br><br>
+                        <p>Badge Name:</p> <input type="text" name="name" value="<?php echo $name ?>" placeholder="Enter a name"/><br><br>
+                        <p>Badge Description:</p> <input type="text" name="desc" value="<?php echo $desc ?>" placeholder="Enter a description"/><br><br>
                         
-                        <button type="submit" class="btn btn-primary" name="insert"> INSERT</button>
-                        <button type="submit" class="btn btn-primary" name="display">DISPLAY</button>
-                        <button type="submit" class="btn btn-primary" name="search"> SEARCH</button>
-                        <button type="submit" class="btn btn-primary" name="update"> UPDATE</button>
-                        <button type="submit" class="btn btn-primary" name="delete"> DELETE</button>
-                        <button type="submit" class="btn btn-primary" name="rowcount"> ROW COUNT</button>
+                        <button type="submit" class="btn btn-dark" name="insert"> INSERT</button>
+                        <button type="submit" class="btn btn-dark" name="display">DISPLAY</button>
+                        <button type="submit" class="btn btn-dark" name="search"> SEARCH</button>
+                        <button type="submit" class="btn btn-dark" name="update"> UPDATE</button>
+                        <button type="submit" class="btn btn-dark" name="delete"> DELETE</button>
+                        <button type="submit" class="btn btn-dark" name="rowcount"> ROW COUNT</button>
 
                     </center><br><br>
                 </td>
@@ -83,6 +85,7 @@ $desc = '';
 
 <?php
 
+//-----------------------------------------DISPLAY---------------------------------//
 if(isset($_POST['display']))
 {
     $pdoQuery = "SELECT id_badges, nom_badges, desc_badges FROM badges";
@@ -92,7 +95,7 @@ if(isset($_POST['display']))
     {
         echo '<center>
             <table width="50%" border="1" cellpadding="5" cellspacing="5"
-            <tr style="color:blue;">
+            <tr style="color:yellow;">
                 <td> ID </td>
                 <td> Badge Name </td>
                 <td> Description </td>
@@ -116,7 +119,7 @@ if(isset($_POST['display']))
         echo '<script> alert("No Record / Data Found")</script>';
     }
 }
-
+//-----------------------------------------UPDATE---------------------------------//
 if(isset($_POST['update']))
 {
     $id = $_POST['id'];
@@ -138,7 +141,7 @@ if(isset($_POST['update']))
     }
 
 }
-
+//-----------------------------------------DELETE---------------------------------//
 if(isset($_POST['delete']))
 {
     $id = $_POST['id'];
@@ -155,7 +158,7 @@ if(isset($_POST['delete']))
         echo '<script>alert("Badge Not Deleted")</script>';
     }
 }
-
+//-----------------------------------------INSERT---------------------------------//
 if(isset($_POST['insert']))
 {
     $name = $_POST['name'];
@@ -175,15 +178,48 @@ if(isset($_POST['insert']))
         echo "<script>alert('Badge Not Added')</script>";
     }
 }
-
+//----------------------------------------ROW COUNT---------------------------------//
 if(isset($_POST['rowcount']))
 {
     $pdoQuery = "SELECT * FROM badges";
     $pdoQuery_run = $bdd->query($pdoQuery);
     $pdoQuery_exec = $pdoQuery_run->rowCount();
 
-    echo "<center><h1> THERE IS $pdoQuery_exec ELEMENT(S) IN YOUR TABLE</h1></center>";
+    echo "<center><h2> THERE IS $pdoQuery_exec ELEMENT(S) IN YOUR TABLE</h2></center>";
 }
 
-
 ?>
+
+
+<style>
+
+@font-face {
+  font-family: BatmanFont1;
+  src: url(../assets/fonts/batmfa__.ttf);
+}
+
+body{
+    background-color:black;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 80px;
+  margin: 0;
+  font-family: BatmanFont1;
+  color: yellow;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0;
+  font-family: BatmanFont1;
+  color: yellow;
+}
+
+p{
+    color:white;
+}
+
+</style>
